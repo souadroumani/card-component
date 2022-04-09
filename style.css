@@ -1,0 +1,159 @@
+*{
+
+    margin: 0 auto;
+    padding: 0 auto;
+}
+body{
+    
+    background-color:hsl(217, 54%, 11%);
+    font-size: 18px;
+   
+    font-family: 'Outfit', sans-serif;
+ }
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    height: 500px;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 20px;
+    box-shadow:0px 0px 35px hsl(216, 50%, 16%);
+}
+
+.img-egua-class{
+    width: 300px;
+    height: 280px;
+    padding: 0;
+    margin: 0;
+}
+
+.image-equilibrium{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.image-equilibrium:hover{
+    cursor: pointer;
+}
+ 
+
+.view{
+    display:none;
+    position: absolute;
+    width: 300px;
+    height: 280px;
+    top:355px;
+    background-color:rgba(0, 255, 247,.5);
+}
+
+.view:hover {
+    top:75px;
+}
+
+  .image-equilibrium:active .view{
+    display:block;
+    top:75px;
+    animation-name: example ;
+    animation-duration : 2s ;
+  }
+.icon-view{
+    position: relative;
+    top: 45%;
+    left: 42%;
+}
+
+
+
+
+/* #view:hover > #viewhover {
+        display: block; 
+        animation-name: example ;
+        animation-duration : 2s ;
+    
+        
+} */
+/* #viewhover:hover{
+display: block;
+display: block;
+    top: 75px;
+} */
+
+
+  
+  
+  
+       @keyframes example{
+         from { top : 300px;}
+         to { top : 75px;}
+   }
+
+hr{
+    border: solid hsl(215, 32%, 27%);
+    border-width: 0.5px ;
+
+}
+ 
+
+.title{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.title:hover{
+    color:  hsl(178, 100%, 50%);
+    cursor: pointer;
+  
+
+}
+.content{
+    color:  hsl(215, 51%, 70%);
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.icons {
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: stretch;
+    margin-bottom: 10px;
+}
+.price{
+
+    color: hsl(178, 100%, 50%);
+}
+
+.clock{
+    color:  hsl(215, 51%, 70%);
+    margin-left: 97px;
+}
+
+footer{
+    margin-top: 15px;
+    display: inline-flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: stretch;
+}
+footer img {
+    border: solid 1px white;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+footer p {
+    color: hsl(215, 51%, 70%);
+}
+
+footer span{
+    color: hsl(0, 0%, 100%) ;
+}
+footer span:hover{
+    color: hsl(178, 100%, 50%) ;
+    cursor: pointer;
+}
